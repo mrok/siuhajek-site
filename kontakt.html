@@ -1,0 +1,71 @@
+---
+layout: default
+bigimage: contact.jpg
+---
+
+<article class="post" id="1" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="wrapper">
+        <header>
+            <h2 class="post-title" itemprop="name headline"><a href="/" class="post-link">Kontakt</a></h2>
+        </header>
+        <section class="post-text" itemprop="articleBody text">
+            <p>
+
+            <h3>Jacek Kowalski "SIUHAJKOWA KOLIBA" na Olczańskim Wierchu</h3>
+            <ul>
+                <li>GPS: N 49° 19' 36.12"; E 20° 00' 02.05"; H = 779 m n.p.m.</li>
+            </ul>
+            <ul>
+                <li>ul. Kościuszki 9E</li>
+                <li>34-520 PORONIN-Misiagi</li>
+                <li>tel/fax +48 018 447 61 85</li>
+                <li>mobile: +48 609 500 295</li>
+                <li>Rzeczoznawca budowlany w specjalności konstrukcyjno inżynieryjnej obejmującej wykonawstwo obiektów budowlanych. Uprawnienia P.I.I.B. Nr RZE/X/022/04 Centralny Rejestr G.U.N.B. poz 26/04/R/C Uprawnienia budowlane nr 4/65, Kraków</li>
+            </ul>
+            <img src="/img/koliba.jpg">
+
+            <h3>Mapa</h3>
+            <div id="map"></div>
+            </p>
+        </section>
+    </div>
+</article>
+
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAycdpTzZqNrV3FRiOgtmZExQpfLVDBtVuA9wnGcHi1YnW33OTYBTjNg1p1Sh3BHibeXBql9x8HEXi6A" type="text/javascript"></script>
+<script type="text/javascript">
+    var lat = 49.326740;
+    var lng = 20.0002;
+    var zoom = 14;
+
+    function info(map) {
+        var point = new GLatLng(lat, lng);
+        var marker = new GMarker(point);
+        map.addOverlay(marker);
+    }
+
+
+    function load() {
+        if (GBrowserIsCompatible()) {
+            var map = new GMap2(document.getElementById("map"));
+
+            map.setCenter(new GLatLng(lat, lng), zoom);
+            map.addControl(new GLargeMapControl());
+
+            map.addControl(new GScaleControl());
+            map.addControl(new GMapTypeControl());
+            map.setCenter(new GLatLng(lat, lng), zoom);
+
+            map.hideControls();
+            GEvent.addListener(map, "mouseover", function () {
+                map.showControls();
+            });
+            GEvent.addListener(map, "mouseout", function () {
+                map.hideControls();
+            });
+            info(map);
+        }
+    }
+    load()
+</script>
+

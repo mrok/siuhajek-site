@@ -1,0 +1,32 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if site.description %}<meta name="description" content="{{ site.description }}" />{% endif %}
+    {% if site.keywords %}<meta name="keywords" content="{{ site.keywords}}" />{% endif %}
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="theme author" href="https://plus.google.com/+MaxHolland1337"/>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css?v={{ site.time | date: "%c" | md5  }}" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css?v={{ site.time | date: "%c" | md5  }}" />
+    <style>
+        /* Gulp keeps removing webkit/moz support */
+        *{
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
+        }
+    </style>
+    <script src="/js/vendor/modernizr.js?v={{ site.time | date: "%c" | md5  }}"></script>
+
+    <meta name="generator" content="Ghost 0.5" />
+    <link rel="canonical" href="{{ page.url }}" />
+</head>

@@ -1,0 +1,11 @@
+# Site settings
+title: inż. Jacek Kowalski - inżynier, ekspert budownictwa i konstrukcji
+keywords: ekspert, konstrukcje, budownictwo, wierzowce, elektorwnie jądrowe, inwestycje budowlane, kadry, ekspertyzy budowlane, rzeczoznawca konstrukcyjno budowlany
+description: inż. Jacek Kowalski - Doradztwo budowlane, opinie techniczne i ekspertyzy
+baseurl: ""
+url: "http://siuhajek.com"
+
+# Build settings
+markdown: kramdown
+
+
