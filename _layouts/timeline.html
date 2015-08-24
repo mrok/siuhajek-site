@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+    {% include menu.html %}
+
+    <div class="page-wrapper">
+        {% include header.html %}
+
+        <section id="post-container" role='main' class="main-section hide-post">
+                <img id="bg-img" src="/img/{{ page.bigimage }}">
+                {{ content }}
+        </section>
+</div>
+
+    {% include footer.html %}
+</body>
+</html>
