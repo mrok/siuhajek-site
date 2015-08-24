@@ -1156,7 +1156,7 @@ p {
 
 body {
     background: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Verdana, Arial, helvetica, sans-serif;
     color: #222;
     overflow-x: hidden;
     margin: 0;
@@ -2034,4 +2034,164 @@ body a:hover {
     transition-property: opacity;
     transition-delay: .25s;
     transition-duration: 0
+}
+
+.post2 {
+    width: 100%;
+    position: relative;
+    color: #333332;
+    border-bottom: 1px solid #f2f2f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-word-break: break-word;
+    word-break: break-word
+}
+
+.post2 .wrapper {
+    padding: 40px 0
+}
+
+.post2 hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #f2f2f0;
+    margin: 40px 0
+}
+
+.post2 input {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    margin: 0
+}
+
+.post2 img, .post2 iframe, .post2 object, .post2 object embed {
+    width: 100%;
+}
+
+.post2 img {
+    height: auto
+}
+
+.post2 header {
+    margin-bottom: 8px
+}
+
+.post2 header h2 {
+    font-weight: 700;
+    margin: 0
+}
+
+.post2 blockquote {
+    border-left: 2px solid #57ad68;
+    margin: 0 0 0 10px;
+    padding-left: 10px
+}
+
+.post2 blockquote, .post2 section {
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.7em
+}
+
+.post2 section {
+    color: #4d4d4d
+}
+
+.post2 section p, .post2 section blockquote {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit
+}
+
+.post2 section a {
+    text-decoration: underline
+}
+
+.post2 section a:hover {
+    text-decoration: none
+}
+
+.post2 section h1, .post2 section h2, .post2 section h3, .post2 section h4, .post2 section h5, .post2 section h6 {
+    color: #333332;
+    font-weight: 700
+}
+
+.post2 section h1 {
+    font-size: 2em
+}
+
+.post2 section h2 {
+    font-size: 1.5em
+}
+
+.post2 section h3 {
+    font-size: 1.17em
+}
+
+.post2 section h4 {
+    font-size: 1em
+}
+
+.post2 section h5 {
+    font-size: .83em
+}
+
+.post2 section h6 {
+    font-size: .67em
+}
+
+.post2 footer {
+    color: #b3b3b1;
+    font-size: 18px
+}
+
+.post2 footer .post-other {
+    float: right
+}
+
+.post2 footer .post-other .notes {
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 1px;
+    color: #ccc
+}
+
+.post2 footer .author-image {
+    border-radius: 50%;
+    width: 25px !important;
+    margin-top: 0;
+    margin-right: 10px;
+    float: left
+}
+
+.post2 footer .author-info {
+    float: left;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    top: 2px
+}
+
+.post2 footer ul {
+    padding: 0;
+    list-style: none
+}
+
+.post2 footer ul li {
+    float: left;
+    display: inline-block;
+    margin-right: 10px
+}
+
+.post2 footer ul li:last-child {
+    margin-right: 0
+}
+
+.post2 footer ul i {
+    margin-right: 5px
 }
